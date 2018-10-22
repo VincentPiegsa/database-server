@@ -7,7 +7,6 @@ const app = express();
 
 const port = process.env.PORT || 80;
 const databaseFile = './db/data.db';
-const usersDatabase = './db/users.db';
 
 app.use(express.static(path.join(__dirname, '/static')));
 app.use(express.static(path.join(__dirname, '/db')));
@@ -17,11 +16,6 @@ app.use(bodyParser());
 let db = new sqlite3.Database(databaseFile, (error) => {
     if (error) throw error;
     console.log('Connected to SQLite3 database.');
-});
-
-let users = new sqlite3.Database(usersDatabase, (error) => {
-    if (error) throw error;
-    console.log("Connected to Authentication Database");
 });
 
 const fetchDatabase = function(sql, res) {
