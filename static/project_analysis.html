@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>Über das Projekt | Datenanalyse</title>
+	<meta charset="utf8">
+	<!--Responsive for mobile devices; sets page-width to device-width and sets zoom to 1-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-3">Über das Projekt: <small>Die Datenanalyse</small></h1>
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav">
+
+			    <li class="nav-item active">
+			    	<a class="nav-link" href="/home">Home</a>
+			    </li>
+
+			    <li class="nav-item dropdown">
+				    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projekt</a>
+				    <div class="dropdown-menu">
+					<a class="dropdown-item" href="/project/analysis">Datenanalyse</a>
+				    <a class="dropdown-item" href="/project/sensor">Sensoren</a>
+				    <a class="dropdown-item" href="/project/server">Server</a>
+				    </div>
+    			</li>
+
+			    <li class="nav-item">
+			    	<a class="nav-link" href="/database">Datenbank</a>
+			    </li>
+
+			    <li class="nav-item">
+			    	<a class="nav-link" href="/protokoll.pdf">Protokoll</a>
+			    </li>
+
+			    <li class="nav-item">
+			    	<a class="nav-link disabled" href="/contact">Kontakt</a>
+			    </li>
+
+			</ul>
+		</nav>
+
+		<br>
+
+		<div>
+			<p>Die Daten wurden im <abbr title="JavaScript Object Notation">JSON-Format</abbr> 
+			auf der SD-Karte gespeichert. Zur weiteren Analyse habe ich ein Python-Programm 
+			geschrieben, das die Messungsdaten Zeile für Zeile in eine SQLite3-Datenbank schreibt. 
+			Die dadurch erzeugte portable .db Datei konnte dann mit einem SQLite-Browser geöffnet 
+			werden und mit SQL-Befehlen bearbeitet und analysiert werden. Zur Visualisierung habe 
+			ich ebenfalls Python genutzt, allerdings mit dem Modul matplotlib, das Grafiken aus 
+			Daten erzeugt. Die Programme und Grafiken befinden sich in meinem <a href="https://github.com/VincentPiegsa/weatherstation" class="text-primary">GitHub Repository</a>.</p>
+		
+			<img src="/images/dataAVG.jpg" width="50%" style="margin-top: -15px;"><img src="/images/tmpAVG.jpg" width="50%" style="margin-top: -15px;">
+		</div>
+
+	</div>
+</body>
+</html

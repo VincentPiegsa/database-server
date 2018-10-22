@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>Über das Projekt | Server</title>
+	<meta charset="utf8">
+	<!--Responsive for mobile devices; sets page-width to device-width and sets zoom to 1-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-3">Über das Projekt: <small>Der Server</small></h1>
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav">
+
+			    <li class="nav-item active">
+			    	<a class="nav-link" href="/home">Home</a>
+			    </li>
+
+			    <li class="nav-item dropdown">
+				    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projekt</a>
+				    <div class="dropdown-menu">
+					<a class="dropdown-item" href="/project/analysis">Datenanalyse</a>
+				    <a class="dropdown-item" href="/project/sensor">Sensoren</a>
+				    <a class="dropdown-item" href="/project/server">Server</a>
+				    </div>
+    			</li>
+
+			    <li class="nav-item">
+			    	<a class="nav-link" href="/database">Datenbank</a>
+			    </li>
+
+			    <li class="nav-item">
+			    	<a class="nav-link" href="/protokoll.pdf">Protokoll</a>
+			    </li>
+
+			    <li class="nav-item">
+			    	<a class="nav-link disabled" href="/contact">Kontakt</a>
+			    </li>
+
+			</ul>
+		</nav>
+
+		<br>
+		<p>
+		Um die Datenbank über eine Weboberfläche nutzen zu können, wurde ein Programm benötigt, 
+		das die Eingabe aus dem Textfeld in die Datenbank einsetzt und das Resultat zurückliefert. 
+		Falls beim Ausführen der Query ein Fehler auftritt, wird die Fehlermeldung auf der Seite 
+		angezeigt. Dafür gab es mehrere Möglichkeiten:
+		<br>
+		<div class="list-group">
+			<a href="https://www.djangoproject.com/" class="list-group-item disabled">django: Ein Python Framework</a>
+			<a href="https://nodejs.org/en/" class="list-group-item">node.js. Eine JavaScript-Laufzeitumgebung</a>
+			<a href="https://golang.org/" class="list-group-item disabled">Go: Eine Programmiersprache, die hauptsächlich für Server genutzt wird</a>
+		</div>
+		<br>
+		Letztendlich habe ich mich für node.js entschieden, da es verständlicher als django und 
+		vielseitiger als Go ist. 
+		</p>
+	</div>
+</body>
+</html
