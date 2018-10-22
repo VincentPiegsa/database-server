@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "node.js server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:com": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "author": "Vincent Piegsa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "sqlite3": "4.0.2"
+  }
+}
